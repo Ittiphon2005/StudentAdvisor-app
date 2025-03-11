@@ -7,13 +7,6 @@
 
 Class Diagram
 Class Diagram ต่อไปนี้อธิบายโครงสร้างคลาสและความสัมพันธ์ระหว่างคลาสในโปรแกรม StudentAdvisorApp
-text
-
-Collapse
-
-Wrap
-
-Copy
 +----------------+       +----------------+       +----------------+
 |    Person      |<|---->|    Student     |       |   Professor    |
 | (Abstract)     |       |                |       |                |
