@@ -7,31 +7,8 @@
 
 Class Diagram
 Class Diagram ต่อไปนี้อธิบายโครงสร้างคลาสและความสัมพันธ์ระหว่างคลาสในโปรแกรม StudentAdvisorApp
-+----------------+       +----------------+       +----------------+
-|    Person      |<|---->|    Student     |       |   Professor    |
-| (Abstract)     |       |                |       |                |
-+----------------+       +----------------+       +----------------+
-| - name: string |       | - studentId: string |  | - advisees: List<Student> |
-| - major: string |       | - grade: double     |  |                |
-+----------------+       | - advisor: Professor|  |                |
-| + Name: string |       +----------------+       +----------------+
-| + Major: string|       | + StudentId: string |  | + AddAdvisee(student: Student): void |
-| + ToString(): string | | + Grade: double     |  | + GetAdvisees(): List<Student> |
-| (abstract)     |       | + Advisor: Professor|  | + ToString(): string |
-+----------------+       | + ToString(): string|  +----------------+
-                         +----------------+
-                              ^       |
-                              |       |
-                         +----------------+
-                         |     Form1      |
-                         +----------------+
-                         | - professors: List<Professor> |
-                         | - students: List<Student>     |
-                         +----------------+
-                         | + btnAddStudent_Click()       |
-                         | + btnShowTopStudent_Click()   |
-                         | + btnShowAdvisees_Click()     |
-                         +----------------+
+![image](https://github.com/user-attachments/assets/691584c8-50e5-4635-867f-c2e6a6bfd43d)
+
 อธิบาย Class Diagram
 Person (Abstract Class)
 เป็นคลาสพื้นฐานแบบนามธรรม (abstract) ที่กำหนดคุณสมบัติพื้นฐานของบุคคลในระบบ
